@@ -1,4 +1,4 @@
-package com.example.narabhaya
+package com.shiningcoders.narabhaya
 
 import io.flutter.embedding.android.FlutterActivity
 
