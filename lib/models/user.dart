@@ -3,7 +3,7 @@ class User {
   String name;
   String email;
   String username;
-  String status;
+  String phoneNo;
   String profilePhoto;
 
   User({
@@ -11,7 +11,7 @@ class User {
     this.name,
     this.email,
     this.username,
-    this.status,
+    this.phoneNo,
     this.profilePhoto,
   });
 
@@ -21,7 +21,7 @@ class User {
     data['name'] = user.name;
     data['email'] = user.email;
     data['username'] = user.username;
-    data["status"] = user.status;
+    data["phoneNo"] = user.phoneNo;
     data["profile_photo"] = user.profilePhoto;
     return data;
   }
@@ -32,7 +32,7 @@ class User {
     this.name = mapData['name'];
     this.email = mapData['email'];
     this.username = mapData['username'];
-    this.status = mapData['status'];
+    this.phoneNo = mapData['phoneNo'];
     this.profilePhoto = mapData['profile_photo'];
   }
 }
