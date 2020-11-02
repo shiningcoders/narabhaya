@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:narabhaya/resources/auth_methods.dart';
 import 'package:narabhaya/screens/home.dart';
 import 'package:narabhaya/screens/login.dart';
@@ -19,12 +20,21 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final AuthMethods _authMethods = AuthMethods();
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Skype Clone",
+    return NeumorphicApp(
+      theme: NeumorphicThemeData(
+        baseColor: Color(0xffDBE6E8),
+        lightSource: LightSource.topLeft,
+        depth: 10,
+      ),
+      darkTheme: NeumorphicThemeData(
+        baseColor: Color(0xFF3E3E3E),
+        lightSource: LightSource.topLeft,
+        depth: 6,
+      ),
+      themeMode: ThemeMode.light,
+      title: "Narabhaya",
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
