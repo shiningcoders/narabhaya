@@ -36,6 +36,7 @@ dependencies:
   location: ^3.0.0
   provider: ^4.3.2+2
   flare_splash_screen: ^2.0.1+2
+  flutter_neumorphic: ^3.0.3
 
 dev_dependencies:
   flutter_test:
