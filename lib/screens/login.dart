@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:location/location.dart';
 import 'package:narabhaya/resources/auth_methods.dart';
+import 'package:narabhaya/screens/home.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -98,22 +99,7 @@ class LoginScreenState extends State<LoginScreen> {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return Scaffold(
-                  body: Container(
-                    padding: const EdgeInsets.all(32),
-                    child: Column(
-                      children: const <Widget>[
-                        PermissionStatusWidget(),
-                        Divider(height: 32),
-                        ServiceEnabledWidget(),
-                        Divider(height: 32),
-                        GetLocationWidget(),
-                        Divider(height: 32),
-                        ListenLocationWidget(),
-                      ],
-                    ),
-                  ),
-                );
+                return HomeScreen();
               },
             ),
           );
