@@ -42,26 +42,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: NeumorphicAppBar(
-        leading: NeumorphicBackButton(
-          forward: true,
-        ),
-        centerTitle: true,
-        title: NeumorphicText(
-          "SOS",
-          style: NeumorphicStyle(
-            depth: 4,
-            color: Colors.black,
-          ),
-          textStyle: NeumorphicTextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ),
+      floatingActionButton: NeumorphicFloatingActionButton(
+          child: Icon(Icons.settings), onPressed: () {}),
       body: Center(
         child: NeumorphicButton(
-          padding: EdgeInsets.all(70),
+          padding: EdgeInsets.all(110),
           style: NeumorphicStyle(
             shape: NeumorphicShape.convex,
             boxShape: NeumorphicBoxShape.circle(),
@@ -74,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Color(0xffff4757),
             ),
             textStyle: NeumorphicTextStyle(
-              fontSize: 28,
+              fontSize: 38,
               fontWeight: FontWeight.w600,
             ),
           ),
